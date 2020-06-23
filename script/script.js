@@ -2,10 +2,10 @@
 
 const DomElement = function(selector, height, width, bg, fontSize) {
 	this.selector = selector;
-    this.height = height;
-    this.width = width;
-    this.bg = bg;
-    this.fontSize = fontSize;
+   	this.height = height;
+    	this.width = width;
+    	this.bg = bg;
+    	this.fontSize = fontSize;
 };
 
 DomElement.prototype.createElement = function() {
@@ -19,11 +19,11 @@ DomElement.prototype.createElement = function() {
 	 	newElement.id = this.selector.slice(1); 
 	}
 	newElement.style.cssText=`
-							height: ${this.height}px;
-	 						width: ${this.width}px;
-							background: ${this.bg};
-    						font-size: ${this.fontSize}px;
-    						`;
+				height: ${this.height}px;
+	 			width: ${this.width}px;
+				background: ${this.bg};
+    				font-size: ${this.fontSize}px;
+    				`;
 	newElement.innerHTML = `Привет мир!`; 
 	document.body.append(newElement);
 };
