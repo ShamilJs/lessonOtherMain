@@ -1,11 +1,7 @@
 'use strict';
 
-
 let rightSum = 0,
 	downSum = 0;
-	
-
-
 
 const DomElement = function(selector, height, width, bg, fontSize, position, right, top) {
 	this.selector = selector;
@@ -30,14 +26,14 @@ DomElement.prototype.createElement = function() {
 	 	newElement.id = this.selector.slice(1); 
 	}
 	newElement.style.cssText=`
-							height: ${this.height}px;
-	 						width: ${this.width}px;
-							background: ${this.bg};
-    						font-size: ${this.fontSize}px;
-    						position:${this.position};
-    						right:${this.right}px;
-    						top: ${this.top}px;
-    						`;
+				height: ${this.height}px;
+	 			width: ${this.width}px;
+				background: ${this.bg};
+    				font-size: ${this.fontSize}px;
+    				position:${this.position};
+    				right:${this.right}px;
+    				top: ${this.top}px;
+    				`;
 	newElement.innerHTML = `Привет мир!`; 
 	document.body.append(newElement);
 };
